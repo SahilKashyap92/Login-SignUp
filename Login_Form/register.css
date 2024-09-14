@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/assets/login3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 700px;
+    width: 500px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+p{
+    color: white;
+    padding: 25px 0;
+    font-size: 1.7em;
+    font-weight: 600;
+}
+.dts{
+    position: relative;
+    width: 350px;
+    margin: 30px 0;
+    border-bottom: 2px solid white;
+}
+.dts input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    color: white;
+    padding: 0 30px 0 10px;
+}
+input:focus ~ label,
+input:valid ~ label{
+    top: -6px;
+}
+.dts label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: white;
+}
+#rtr{
+    height: 50px;
+    width: 70%;
+    border-radius: 40px;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 10px 0;
+}
+#rtr:hover{
+    background: rgba(0, 0,0,0.5);
+    color: black;
+}
+.lg{
+    font-size: 1.2em;
+}
+.lg>a{
+    text-decoration: none;
+    color: orange;
+}
+.lg>a:hover{
+    text-decoration: underline;
+    color: red;
+}
